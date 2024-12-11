@@ -1,5 +1,4 @@
-let tasks = [];
-
+let tasks = []
 document.addEventListener("DOMContentLoaded", () => {
     const storedTasks = JSON.parse(localStorage.getItem('tasks'));
 
@@ -69,7 +68,7 @@ const updateTaskList = () => {
     taskList.innerHTML = ''; 
 
     tasks.forEach((task, index) => {
-        let listItem = document.createElement("li");
+        const listItem = document.createElement("li");
         listItem.id = `task-${index}`;
 
         listItem.innerHTML = `
