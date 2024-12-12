@@ -83,7 +83,7 @@ const updateTaskList = () => {
                 </div>
             </div>
         `;
-        taskList.appendChild(listItem);
+        taskList.append(listItem);
     });
 };
 
